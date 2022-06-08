@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" type="image/x-icon" href="./img/apple2.png" />
+  <title>iTunes</title>
+</head>
+
+<body>
+  <main id="landing">
+    <div class="search-container">
+      <div class="search-container-header">
+        <div class="main-title">
+          <h1>
+            <i class="fa fa-apple" style="font-size: 24px; color: rgb(121, 120, 143)"></i>
+            Knjižnica iTunes
+          </h1>
+        </div>
+        <p class="lead">
+          Pretražite iTunes bazu.
+        </p>
+      </div>
+      <form>
+        <div class="artist-name-input">
+          <label for="name" class="form-label"><span class="label-content">Ime pjevača</span></label>
+          <input type="text" name="name" autocomplete="off" placeholder="ex., Disturbed" class="text-box" required />
+        </div>
+      </form>
+    </div>
+    <div class="results">
+      <div class="results__titles">
+        <div class="main-title">
+          <h1 id="artist-name"></h1>
+          <div class="placeHolder"></div>
+        </div>
+      </div>
+      <div class="results__box"></div>
+    </div>
+  </main>
+  <script src="./loader_org.js"></script>
+  <script src="./itunes.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
